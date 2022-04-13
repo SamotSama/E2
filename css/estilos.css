@@ -1,0 +1,30 @@
+*{
+	margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+nav ul{
+	font-family: 'Oswald', sans-serif;
+	background-color: black;
+    font-size: 18px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 62px;
+    align-items: center;
+    margin: 0px;
+}
+nav a{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+nav a:focus{
+    text-decoration-line: underline;
+}
+nav a:hover{
+    color: #c3383d;
+}
+nav img{
+	height: 66px;
+	width: 66px;
+}
