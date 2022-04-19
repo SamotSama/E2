@@ -1,30 +1,62 @@
 *{
-	margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     font-family: 'Oswald', sans-serif;
+    background-color: darkgray;
+    padding: 100px;
+    font-size: 14px;
+    color: #ffffff;
 }
-nav ul{
-	font-family: 'Oswald', sans-serif;
-	background-color: black;
-    font-size: 18px;
+.navbar{
     display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    height: 62px;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 0px;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
 }
-nav a{
-	font-family: 'Oswald', sans-serif;
-	color: white;
-	text-decoration: none;
+.navbar a{
+    text-decoration: none;
+    color: inherit;
 }
-nav a:focus{
-    text-decoration-line: underline;
+#icon{
+    height: 35px;
 }
-nav a:hover{
+.logo {
+    margin-right: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+}
+.list :hover{
     color: #c3383d;
 }
-nav img{
-	height: 66px;
-	width: 66px;
+#toggler,
+.navbar label{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
 }
