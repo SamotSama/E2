@@ -6,12 +6,65 @@
 body{
     font-family: 'Oswald', sans-serif;
     background-color: darkgray;
-    padding: 5px;
     font-size: 14px;
     color: #ffffff;
+    max-width: 100%;
+}
+.animated-background{
+    background: linear-gradient(
+        to right, #A1051D,
+        #F5515F, #000000af); 
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+.button-name{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.button{
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: wavy;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
+    padding: 20px 15px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 1s;
+}
+
+.button:hover::before{
+    transform: scaleX(1) skewX(35deg);
+}
+
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 .container{
-    max-width: 960px; 
     margin: 0 auto;
     padding: 12px;
 }
@@ -19,31 +72,76 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
     padding-block: 15px;
+    position: fixed;
 }
 .navbar a{
     text-decoration: none;
     color: inherit;
 }
-.icon{
-    height: 35px;
+.img-logo{
+    width: 50px;
+    border-radius: 20px;
 }
-.logo {
-    margin-right: 50px;
+.nav-name {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-left: 115px;
 }
 .list{
     list-style: none;
     display: flex;
-    gap: 25px; 
+    gap: 25px;
+    font-size: 15px;
 }
 .list :hover{
-    color: #c3383d;
+    color: #000000;
 }
 #toggler,
 .navbar label{
     display: none;
+}
+.img-fluid{
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: -50px -20px 40px #fbf3fd40, 0px 50px 40px #fbf3fd40, 50px -20px 40px #fbf3fd40, 0 0 2pt 4pt rgb(255 255 255 / 31%);
+    margin-top: 6rem;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 65px;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+}
+.intro p{
+    font-size: 25px;
+    max-width: 600px;
+    text-align: center;
+    color: #c1c1c1;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 30px ;
+}
+.footer{
+    background-color: #333333;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and 
 (max-width: 600px){
@@ -64,5 +162,24 @@ body{
     }
      #toggler:checked ~ .menu{
         max-height: 100%;
+    }
+    .nav-name {
+        font-size: 20px;
+        margin-left: -85px;
+    }
+    .img-fluid{
+        width: 125px;
+    }
+    .img-logo{
+        width: 35px;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .intro p{
+        font-size: 15px;
+        max-width: 250px;
     }
 }
