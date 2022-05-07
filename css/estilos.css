@@ -8,8 +8,13 @@ body{
     background-color: darkgray;
     font-size: 14px;
     color: #ffffff;
+    width: 100vw;
     max-width: 100%;
+    max-height: 100%;
 }
+
+/* NAVBAR + AERO MENU */
+
 .animated-background{
     background: linear-gradient(
         to right, #A1051D,
@@ -20,7 +25,7 @@ body{
 .button-name{
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 3em;
 }
 .button{
     display: inline-block;
@@ -67,6 +72,7 @@ body{
 .container{
     margin: 0 auto;
     padding: 12px;
+    height: 100vh;
 }
 .navbar{
     display: flex;
@@ -111,16 +117,17 @@ body{
     width: 250px;
     border-radius: 50%;
     box-shadow: -50px -20px 40px #fbf3fd40, 0px 50px 40px #fbf3fd40, 50px -20px 40px #fbf3fd40, 0 0 2pt 4pt rgb(255 255 255 / 31%);
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 .title{
     display: flex;
     justify-content: center;
-    font-size: 65px;
+    font-size: 80px;
 }
 .intro{
     display: flex;
     justify-content: center;
+    margin-top: 2.5em;
 }
 .intro p{
     font-size: 25px;
@@ -136,15 +143,330 @@ body{
     z-index: 1030;
     margin-bottom: 30px ;
 }
-.footer{
-    background-color: #333333;
+
+/* seccion 1 - services */
+
+.description__section {
     display: flex;
-    height: 50px;
+    flex-direction: column;
+    background: #222831;
     justify-content: center;
     align-items: center;
+    color: #ea6418;
+    padding: 3rem 0;
+  }
+  
+  .description__section h2 {
+    color: #ffffff00;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    background: linear-gradient( 90deg, #fbbe13, #ea433a );
+    -webkit-background-clip: text;
 }
+  
+  .info-card {
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 3rem;
+    background-color: #393E46;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 12px 11px 4px black;
+  }
+  
+  .card p {
+    max-width: 300px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f2f2f2;
+  }
+
+  .card__container {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .description__section h3 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: var(--thin);
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+.shadow-animation {
+    transform: skew(20deg);
+    font-size: 6px;
+    height: 5em;
+    width: 5em;
+    background-color: #fbbe13;
+    animation: animationExample 1s ease 0s infinite alternate both;
+    margin-bottom: 19em;
+    margin-left: -22em;
+}
+  
+  @keyframes animationExample {
+    0% {
+      box-shadow: 0 0 0 0 currentColor, 0 0 0 0 currentColor;
+    }
+  
+    25% {
+      box-shadow: 0 0 0 0 currentColor, 0 0 0 0 currentColor;
+    }
+  
+    50% {
+      box-shadow: 10em 0 0 0 currentColor, 10em 0 0 0 currentColor;
+    }
+  
+    75% {
+      box-shadow: 10em 10em 0 0 currentColor, 10em 0 0 0 currentColor;
+    }
+  
+    100% {
+      box-shadow: 10em 10em 0 0 currentColor, 10em 0 0 0 currentColor;
+    }
+  }
+
+/* Section 2 - Projects */
+
+.projects__section {
+    display: flex;
+    flex-direction: column;
+    background: #222831;
+    justify-content: center;
+    align-items: center;
+    color: #ea6418;
+    padding: 3rem 0;
+  }
+.projects__section h2 {
+    color: #ffffff00;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    background: linear-gradient( 90deg, #fbbe13, #ea433a );
+    -webkit-background-clip: text;
+}
+.projects__section .card__container{
+    gap: 5px;
+}
+.img-card {
+    height: 28vh;
+}
+
+/* footer */
+
+.footer-distributed{
+    background: #000000;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 50px 60px 40px;
+    overflow: hidden;
+  }
+  
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+    float: left;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed img{
+      height: 10vh;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  
+  .footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer social icons */
+
+  .footer-icons img{
+    height: 25px;
+    margin-top: 5px;
+  }
+  
+  .footer-distributed .footer-icons{
+    margin-top: 40px;
+  }
+  
+  .footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+    float: right;
+  }
+  
+  .footer-distributed .footer-right p{
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+  }
+  
+  /* The contact form */
+  
+  .footer-distributed form{
+    display: inline-block;
+  }
+  
+  .footer-distributed form input,
+  .footer-distributed form textarea{
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color:  #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+  
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color:  #d1d2d2;
+  
+    width: 400px;
+    padding: 18px;
+  }
+  
+  .footer-distributed ::-webkit-input-placeholder {
+    color:  #5c666b;
+  }
+  
+  .footer-distributed ::-moz-placeholder {
+    color:  #5c666b;
+    opacity: 1;
+  }
+  
+  .footer-distributed :-ms-input-placeholder{
+    color:  #5c666b;
+  }
+  
+  
+  .footer-distributed form input{
+    height: 55px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-distributed form textarea{
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed form button{
+    border-radius: 3px;
+    background-color:  #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: right;
+  }
+
+  /* mobile */
+  
+  @media (max-width: 1000px) {
+  
+    .footer-distributed {
+      font: bold 14px sans-serif;
+    }
+  
+    .footer-distributed .footer-company-name{
+      font-size: 12px;
+    }
+  
+    .footer-distributed form input,
+    .footer-distributed form textarea{
+      width: 250px;
+    }
+  
+    .footer-distributed form button{
+      padding: 10px 35px;
+    }
+  
+  }
+  
+  @media (max-width: 800px) {
+  
+    .footer-distributed{
+      padding: 30px;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right{
+      float: none;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .footer-distributed .footer-left{
+      margin-bottom: 40px;
+    }
+  
+    .footer-distributed form{
+      margin-top: 30px;
+    }
+  
+    .footer-distributed form{
+      display: block;
+    }
+  
+    .footer-distributed form button{
+      float: none;
+    }
+  }
+
 @media screen and 
 (max-width: 600px){
+
     .menu{
         width: 100%;
         max-height: 0;
@@ -164,11 +486,12 @@ body{
         max-height: 100%;
     }
     .nav-name {
-        font-size: 20px;
-        margin-left: -85px;
+        font-size: 10px;
+        margin-left: -30px;
     }
     .img-fluid{
-        width: 125px;
+        width: 36%;
+        margin-top: 5.5em;
     }
     .img-logo{
         width: 35px;
@@ -176,10 +499,32 @@ body{
     .title{
         display: flex;
         justify-content: center;
-        font-size: 25px;
+    }
+    .title h1{
+        font-size: 72px;
+        max-width: 399px;
+        text-align: center;
+    }
+    .button-name{
+        margin-top: 1.5em;
     }
     .intro p{
-        font-size: 15px;
-        max-width: 250px;
+        font-size: 20px;
+        max-width: 400px;
+        margin-top: -1em;
+    }
+    .description__section h3 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: var(--thin);
+        max-width: 300px;
+        margin-bottom: 2rem;
+      }
+      .card__container {
+        display: contents;
+        gap: 15rem;
+      }
+      .img-card {
+        height: 22vh;
     }
 }

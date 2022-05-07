@@ -25,10 +25,10 @@
     	<label for="toggler"><i class="ri-menu-line"></i></label>
     	<div class="menu">
 			<ul class="list">
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -49,12 +49,77 @@
 		<div class="intro">
 			<p>I'm a Web Developer and Graphic Designer, at least that it's what I like to think. Here you'll be able to see and appreciate some of my works.</p>
 		</div>
-    </main>
 	</div>
-	<footer>
-		<div class="footer">
-			<p>Created by SAMOTSAMA © 2022</p>
+	<section class="description__section" id="services">
+		<div class="shadow-animation"></div>
+		<h2>My services</h2>
+		<div class="card__container">
+			<div class="card">
+				<img src="./img/computer.png" alt="info 1" class="info-card"/>
+			  	<h3> Web Development</h3>
+				<p>I use various web technologies to develop attractive websites which converts visitors to customers. I develop creative and responsive website layouts.</p>
+			</div>
+			<div class="card">
+				<img src="./img/design.png" alt="info 1" class="info-card"/>
+				<h3> Graphic Design</h3>
+				<p> I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and usable products which aid business growth.</p>
+			</div>
+			<div class="card">
+				<img src="./img/seo.png" alt="info 1" class="info-card"/>
+				<h3> Digital Marketing</h3>
+				<p> I identify and evaluates new digital technologies and use web analytics tools to measure site traffic to better optimize marketing campaigns.</p>
+			</div>
 		</div>
-	</footer>	
+	</section>
+	<section class="projects__section" id="projects">
+		<div class="shadow-animation"></div>
+		<h2>My projects</h2>
+		<h1>A selection of my best projects.</h1>
+		<div class="card__container">
+			<div class="card">
+				<a href="https://wakaranai-iota.vercel.app/" target="_blank"><img src="./img/wakaranai.png" alt="work 1" class="img-card"/></a>
+			</div>
+			<div class="card">
+				<a href="https://da-vinci-dw-1.vercel.app/"><img src="./img/hokkaido.png" alt="work 2" class="img-card"/></a>
+			</div>
+			<div class="card">
+				<a href="#"><img src="./img/portfolio.png" alt="work 3" class="img-card"/></a>
+			</div>
+		</div>
+	</section>
+    </main>
+	<section class="footer">	
+		<footer class="footer-distributed">
+      		<div class="footer-left">
+        		<img class="footer-logo" src="img\ramen.ico" alt="Logo">
+       			<p class="footer-links">
+         			<a href="#">Home</a>
+         			·
+         			<a href="#services">Services</a>
+         			·
+         			<a href="#projects">Projets</a>
+         			·
+         			<a href="#about-me">About Me</a>
+         			·
+         			<a href="#contact">Contact</a>
+       			</p>
+       			<p class="footer-company-name">SamotSama © 2022</p>
+       	 		<div class="footer-icons">
+          			<a href="http://instagram.com/samotsama" target="_blank"><i class="fa fa-instagram"><img src="./img/instagram.png" alt="instaram-logo" class="instagram"/></i></a>
+         			<a href="http://twitch.tv/xsamotsama" target="_blank"><i class="fa fa-twitch"></i><img src="./img/twitch.png" alt="twitch-logo" class="twitch"/></a>
+          			<a href="http://linkedin.com/in/h-alejandro-rosa" target="_blank"><i class="fa fa-linkedin"></i><img src="./img/linkedin.png" alt="linkedin-logo" class="linkedin"/></a>
+         			<a href="http://github.com/samotsama" target="_blank"><i class="fa fa-github"></i><img src="./img/github.png" alt="github-logo" class="github"/></a>
+        		</div>
+      		</div>
+      		<div class="footer-right">
+        		<p>Contact Me</p>
+        		<form action="#" method="post">
+          			<input type="text" name="email" placeholder="Email">
+          			<textarea name="message" placeholder="Message"></textarea>
+          			<button>Send</button>
+				</form>
+     		</div>
+		</footer>	 
+	</section>	   	
 </body>
 </html>	
