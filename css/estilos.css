@@ -270,7 +270,7 @@ body{
     height: 28vh;
     border-radius: 10px;
 }
-.card :hover {
+.card a :hover {
         -moz-box-shadow: 0 0 10px #fbbe13;
         -webkit-box-shadow: 0 0 10px #ea433a;
         box-shadow: 0 0 10px #ffffff7c;
