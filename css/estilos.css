@@ -549,7 +549,7 @@ body{
 /* Laptop */
 
 @media screen and 
-(min-width: 1024px){
+(max-width: 1024px){
   .img-fluid{
     width: 150px;
   }
