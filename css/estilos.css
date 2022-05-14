@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&family=Poppins:wght@100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Oswald', sans-serif;
@@ -423,8 +425,6 @@ body{
     font-weight: bold;
     float: right;
   }
-
-  /* mobile */
   
   @media (max-width: 1000px) {
   
@@ -474,6 +474,8 @@ body{
     }
   }
 
+  /* mobile */  
+
 @media screen and 
 (max-width: 600px){
 
@@ -500,7 +502,7 @@ body{
         margin-left: -30px;
     }
     .img-fluid{
-        width: 36%;
+        width: 20vh;
         margin-top: 5.5em;
     }
     .img-logo{
@@ -521,7 +523,7 @@ body{
     .intro p{
         font-size: 20px;
         max-width: 400px;
-        margin-top: 2em;
+        margin-top: 1em;
     }
     .description__section h3 {
         font-size: 2rem;
@@ -542,4 +544,79 @@ body{
         max-width: 450px;
         font-size: 2rem;
     }
+}
+
+/* Laptop */
+
+@media screen and 
+(min-width: 1024px){
+  .img-fluid{
+    width: 150px;
+  }
+  .title{
+    font-size: 3em;
+    margin-bottom: -3vh;
+  }
+  .button{
+    width: 150px;
+    height: 50px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .intro p{
+    font-size: 1em;
+  }
+  .nav-name {
+    font-size: 18px;
+    margin-left: 5em;
+  }
+  .card__container{
+    gap: 0;
+  }
+  .img-card{
+    height: 22vh;
+  }
+  .img-logo {
+    width: 40px;
+    border-radius: 20px;
+    margin-left: 3.5em;
+  }
+  .description__section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  .projects__section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+  /* Tablet */
+
+@media screen and 
+(min-width: 768px){
+  .img-card{
+  height: 28vh;
+  }
+  .img-fluid {
+  width: 250px;
+  }
+  .title h1{
+    text-align: center;
+    font-size: 1.4em;
+    max-width: 700px;
+  }
+  .intro p {
+    font-size: 2em;
+  }
+  .card__container {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+  .img-logo {
+    margin-left: 4.5em
+  }
 }
