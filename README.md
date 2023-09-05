@@ -26,7 +26,7 @@ This portfolio website is designed to provide you with an overview of my skills 
 
 ## Visit My Portfolio
 
-[Click here to visit my portfolio]([#](https://samotdev.vercel.app/))
+[Click here to visit my portfolio](https://samotdev.vercel.app/)
 
 ## Author
 
