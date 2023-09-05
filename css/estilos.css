@@ -171,7 +171,7 @@ body{
 }
   
   .info-card {
-    width: 40%;
+    width: 30%;
     margin-bottom: 2rem;
   }
   
@@ -191,7 +191,7 @@ body{
   .card p {
     max-width: 300px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #f2f2f2;
     font-family: 'Exo', sans-serif;
   }
@@ -278,6 +278,58 @@ body{
         box-shadow: 0 0 10px #ffffff7c;
         border-radius: 10px;
       }
+
+
+/* Section 3 - About me */
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1; 
+  margin-right: -20rem;
+   
+}
+
+.bio-container {
+  flex: 1; 
+  text-align: justify;
+  font-family: 'Exo', sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem; 
+  margin-right: 6rem;
+}
+
+
+.image-container img {
+  width: 25rem; 
+  border-radius: 6rem;
+  margin-left: 8rem;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);;
+}
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+  background: #222831;
+  justify-content: center;
+  align-items: center;
+  color: #ea6418;
+  padding: 3rem 0;
+}
+
+.about__section h2 {
+  color: #ffffff00;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  background: linear-gradient( 90deg, #fbbe13, #ea433a );
+  -webkit-background-clip: text;
+}
 
 /* footer */
 
@@ -424,7 +476,7 @@ body{
     padding: 15px 50px;
     font-weight: bold;
     float: right;
-  }
+  } 
   
   @media (max-width: 1000px) {
   
@@ -548,7 +600,7 @@ body{
 
 /* Laptop */
 
-@media screen and 
+@media screen and
 (max-width: 1024px){
   .img-fluid{
     width: 150px;
@@ -596,7 +648,7 @@ body{
   /* Tablet */
 
 @media screen and 
-(min-width: 768px){
+(max-width: 768px){
   .img-card{
   height: 28vh;
   }
@@ -605,8 +657,10 @@ body{
   }
   .title h1{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 2.5em;
     max-width: 700px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
   .intro p {
     font-size: 2em;
